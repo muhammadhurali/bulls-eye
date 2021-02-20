@@ -15,6 +15,7 @@
 		E6947AA925E0FECD00216319 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6947A7E25E0FECC00216319 /* ContentView.swift */; };
 		E6947AAA25E0FECD00216319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6947A7F25E0FECD00216319 /* Assets.xcassets */; };
 		E6947AAB25E0FECD00216319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6947A7F25E0FECD00216319 /* Assets.xcassets */; };
+		E6947AC525E1430200216319 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6947AC425E1430200216319 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E6947A9F25E0FECD00216319 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6947AA325E0FECD00216319 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E6947AA525E0FECD00216319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6947AC425E1430200216319 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 		E6947A7C25E0FECC00216319 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E6947ABF25E1409800216319 /* Views */,
+				E6947ABE25E1409100216319 /* Models */,
 				E6947A7D25E0FECC00216319 /* Bulls_EyeApp.swift */,
-				E6947A7E25E0FECC00216319 /* ContentView.swift */,
 				E6947A7F25E0FECD00216319 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +152,22 @@
 				E6947AA525E0FECD00216319 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E6947ABE25E1409100216319 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6947AC425E1430200216319 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6947ABF25E1409800216319 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6947A7E25E0FECC00216319 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6947AA825E0FECD00216319 /* ContentView.swift in Sources */,
+				E6947AC525E1430200216319 /* Game.swift in Sources */,
 				E6947AA625E0FECD00216319 /* Bulls_EyeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
