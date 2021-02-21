@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var alertIsVisible: Bool = false
-    @State private var sliderValue: Double = 50.0
-    @State private var game: Game = Game()
+    @State private var alertIsVisible = false
+    @State private var sliderValue = 50.0
+    @State private var game = Game()
     
     var body: some View {
         VStack {
@@ -42,7 +42,7 @@ struct ContentView: View {
                 Text("Hit Me")
             }
             .alert(isPresented: self.$alertIsVisible, content: {
-                let roundedValue: Int = Int(self.sliderValue.rounded())
+                let roundedValue = Int(self.sliderValue.rounded())
                 
                 return Alert(title: Text("Hello"), message: Text("Slider's value is \(roundedValue)\n"
                                 +
